@@ -1,7 +1,6 @@
 # simple-mongoose-mock
 
 A simplified mongoose mock.
-
 ## Usage Example
 
 #### User.js
@@ -20,7 +19,6 @@ const sinon = require('sinon');
 const mongooseMockModel = require('simple-mongoose-mock');
 
 const proxyquire = require('proxyquire');
-const mongooseMockModel = require('bp-api-common/lib/test-utils/mongoose.mock');
 
 const userExecStub = sinon.stub();
 const userStubedModel = mongooseMockModel('User', { exec: userExecStub });
@@ -31,3 +29,6 @@ expect(userStubedModel
        .find()
        .exec()).to.equal({ name: 'bob', age: 4});
 ```
+
+As you may notice, in this example we are stubbing 'exec' with a sinon stub.
+This way the mongoose chain will return the value we pass to 'userExecStub.returns'.
