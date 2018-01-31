@@ -1,6 +1,6 @@
 {
   "name": "simple-mongoose-mock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simplified mongoose mock.",
   "main": "index.js",
   "scripts": {
