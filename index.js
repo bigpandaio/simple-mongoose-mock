@@ -29,6 +29,7 @@ const defaultMethods = [
   'lean',
   'exec',
   'plugin',
+  'in',
   'populate',
   'remove',
   'set',
